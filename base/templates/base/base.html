@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/company-projects-page.css' %}">
+    <title>company page</title>
+  </head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="company-projects-imgs/Bez tytułu.png"/>
+        <div class="navButtons">
+          <h5 class="navBtn">PROJEKTY</h5>
+          <h5 href="company-projects-page" class="navBtn">CENNIK</h5>
+          <h5 class="navBtn navBtnRed">KONTAKT</h5>
+        </div>
+      </div>
+    {% block content %}
+    {% endblock %}
+</body>
