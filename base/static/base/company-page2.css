@@ -1,0 +1,719 @@
+
+@keyframes fadeIn {
+    from{
+        scale: .8;
+        opacity: 0;
+    }
+    
+    70%{
+        scale: 1;
+        opacity: 1;
+    }
+}
+    .fadeIn{
+        animation: fadeIn ;
+        animation-timeline: view();
+    }
+body{
+    margin: 0;
+    background-color: #F8F8F8;
+    
+}
+/*animations*/
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-80%);
+    }
+    70%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeLines {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes hide-show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes lineLong2 {
+    to{
+        width: 100%;
+    }
+}
+@keyframes slideLeftBounce {
+    0%{
+        transform: translateX(-40%);
+    }
+    80%{
+        transform: translateX(0.5%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideRightBounce {
+    0%{
+        transform: translateX(40%);
+    }
+    80%{
+        transform: translateX(-0.5%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@supports not (position: sticky) {
+    .navbar {
+        position: fixed;
+    }
+}
+.center-container{
+    margin-top: 150px;
+}
+/* navbar */
+.logo{
+    width: 230px;
+    height: 102px;
+}
+.navbar{
+    background-color: black;
+    height: 102px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    margin-bottom: 150px;
+    width: 100%;
+    z-index: 1000;
+}
+.navButtons{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+.navBtn{
+    color: white;
+    font-family: Saira Condensed;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 186.09px;
+    height: 57px;
+    text-align: center;
+    text-decoration: none;
+}
+.navBtnRed{
+    background-color: red;
+    padding: 22.5px 10px;
+    margin: 0;
+    border-radius: 25px;
+}
+/* section 1 */
+
+.title{
+    font-family: Roboto Slab;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+    animation: slideInLeft 1s;
+}
+.under-title{
+    font-family: Josefin Sans;
+    font-weight: 300;
+    font-size: 32px;
+    animation: slideInLeft 1s;
+    animation-delay: 100ms;
+}
+.web-top{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.text-n-picture{
+    display: flex;
+}
+.first-image{
+    margin-top: 100px;
+    max-height: 731px;
+}
+.projects-button{
+    width: Fixed (172px)px;
+    height: Fixed (45px)px;
+    padding: 6px 25px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    font-family: Shanti;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    animation: slideInLeft 1s;
+}
+.projects-button:hover{
+    background-color: lightskyblue;
+}
+.overlines{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.overline-text{
+    font-family: Shanti;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+.text-n-lines{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.line{
+    width: 197px;
+    margin-top: 20px;
+    animation: lineLong 1s linear;
+}
+
+.line2{
+    text-align: center;
+    width: 501.1px;
+    border: 1.5px solid black;
+}
+/* usługi, oferty */
+.over-offers-text{
+    font-family: Saira Stencil One;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+.offer-title{
+    font-family: Roboto Slab;
+    font-size: 38px;
+    font-weight: 400;
+}
+.offer-content{
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 0;
+}
+
+.offer{
+    text-align: center;
+    width: 363.41px;
+    height: 550.32px;
+    border: 2px;
+    border: 2px solid #000000;
+    margin: 50px auto 0 auto;
+    border-radius: 30px;
+    transition: 0.5s;
+    animation: hide-show linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+.offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.offers-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    background: linear-gradient(180deg, #F8F8F8 0%, #D3D3D3 7.86%, #B3B3B3 18.44%, #B3B3B3 51.99%, #B3B3B3 87.06%, #D5D5D5 94.53%, #F8F8F8 100%);
+}
+#offer-image1{
+    padding-top: 5px;
+}
+#offer-title1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#offer-image2{
+    padding-top: 40px;
+}
+#offer-image3{
+    padding-top: 45px;
+}
+#offer-title2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#offer-content1{
+    margin-top: 0;
+}
+#offer-image4{
+    padding-top: 70px;
+}
+/*projects*/
+.projects-text{
+    text-align: left;
+}
+.projects-over-title{
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: left;
+}
+.projects-title{
+    font-family: Tinos;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0;
+}
+.line3{
+    width: 10px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 5px;
+    border: solid black;
+    border-top: 2px;
+    animation: lineLong2;
+    animation-timeline: view();
+    animation-range-start: 250px;
+
+}
+.projects{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 150px;
+}
+.projects-paragrafs{
+    display: flex;
+    gap: 50px;
+}
+.projects-paragraf{
+    font-family: Josefin Sans;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: left;
+}
+.button2-box{
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 120px;
+}
+.button2{
+    padding: 10px 100px;
+    font-family: Shanti;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.button2:hover{
+    background-color: lightskyblue;
+}
+.websites-columns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projects-image{
+    margin-top: 30px;
+    width: 820.3125px;
+    height: 410.15625px;
+}
+    
+.projects-under-title{
+    font-family: Tinos;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+/*meet us*/
+.meet-us-title{
+    display: flex;
+    font-family: Tinos;
+    font-size: 42px;
+    font-weight: 700;
+}
+.meet-us-title:before, .meet-us-title:after{
+    color:black;
+    content:'';
+    flex:1;
+    border-bottom: 3px solid black;;
+    margin: auto 0.25rem;
+    box-shadow: 0 -2px black;
+}
+.meet-us-line{
+    display: flex;
+    animation: hide-show linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    margin: 0 10% 50px 10%;
+}
+.under-name{
+    font-family: Josefin Sans;
+    font-size: 28px;
+    font-weight: 300;
+}
+.name{
+    font-family: Roboto Slab;
+    font-size: 36px;
+    font-weight: 400;
+}
+.meet-us-img{
+    max-width: 228px;
+    max-height: 228px;
+    margin: auto 0;
+    border-radius: 120px;
+}
+.meet-us-text{
+    padding-left: 2%;
+}
+/*plans*/
+.plans-container{
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+   margin: 0 12%;
+   margin-top: 150px;
+}
+.plan{
+    background-color: rgba(253, 239, 113, 0.21);
+    max-width: 400px;
+    text-align: center;
+    margin: 0;
+}
+.plan-worth1{
+    text-decoration: line-through black 6px;
+    color: red;
+    font-family: Roboto Slab;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+}
+.plan-worth2{
+    font-family: Roboto Slab;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+}
+.plan-number{
+    font-family: Roboto Slab;
+    font-size: 42px;
+    font-weight: 500;
+}
+.plan-list{
+    text-align: left;
+    margin: 5px 5%;
+}
+.plan-list-line{
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.plan-button{
+    font-family: Teko;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 1px 19px;
+    background-color: #000001;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+.plan-button:hover{
+    background-color: cornflowerblue;
+}
+.button3-box{
+    margin: 50px 0;
+}
+.show2.plan1{
+    animation: slideLeftBounce 1s;
+}
+.show2.plan3{
+    animation: slideRightBounce 1s;
+}
+.hidden2{
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+.show2{
+    opacity: 1;
+}
+.plan img{
+    max-width: 400px;
+}
+/*contact*/
+.form_form{
+display: flex;
+flex-direction: column;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 30px;
+}
+#form_textarea{
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box; /* Upewnia się, że padding nie zwiększy rozmiaru inputu */
+  padding-bottom: 120px;
+  overflow: hidden;
+    border-top:  solid 2px gray;
+  border-left: solid 2px gray;
+  border-bottom:  solid 2px gray;
+  border-right: solid 2px gray;
+}
+
+#form_textarea::placeholder{
+  text-align: left;
+  vertical-align: top;
+  font-family: "Inter", sans-serif;
+
+  }
+  #form_textarea:focus{
+    border: solid 2px black;
+  }
+  .info:focus{
+    border: solid 2px black;
+  }
+.info::placeholder{
+  font-family: "Inter", sans-serif;
+}
+.info{
+  border-radius: 8px;
+  height: 48px;
+  margin-bottom: 20px;
+  padding: 8px; 
+  resize: none; 
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 400;
+  border:  solid 2px gray;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+.web-bottom-text-content{
+    font-family: Yanone Kaffeesatz;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+}
+.contact-list{
+    list-style: none;
+    margin-top: 50px;
+}
+.contact-list-line{
+    font-family: Varta;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.web-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+.web-bottom-text{
+    max-width: 740px;
+}
+.form{
+    min-width: 750px;
+    margin-top: 20px;
+}
+.contact-list-line img{
+    vertical-align: middle;
+    padding-right: 80px;
+}
+/*footer*/
+.footer-line{
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-top: 70px;
+}
+.footer-paragraf{
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;    
+}
+.footer-title{
+    font-family: Roboto Slab;
+    font-size: 28px;
+    font-weight: 600;
+}
+.footer-list{
+    list-style: none;
+    font-family: Saira Condensed;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.footer-text1{
+    max-width: 500px;
+}
+.footer-text1 img{
+    margin-left: 50px;
+}
+.footer-texts{
+    margin-left: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+/*media*/
+@media (max-width: 1850px) {
+    .plans-container{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media (max-width: 1750px) {
+    
+    .plan{
+        width: 561.88px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1735px) {
+    .line3{
+        width: auto;
+    }
+}
+@media (max-width: 1700px) {
+    .web-top{
+        padding-left: 2%;
+    }
+    .first-image{
+        max-width: 798px;
+        height: 548.25px;
+    }
+}
+@media (max-width: 1620px) {
+    .websites-columns{
+        display: block;
+        text-align: center;
+    }
+    .image-n-title1{
+        display: none;
+    }
+}
+@media (max-width: 1500px) {
+    .web-top{
+        margin: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .text-n-picture{
+        display: block;
+        text-align: center;
+    }
+
+}
+@media (max-width: 1480px) {
+    .web-bottom{
+        display: block;
+        text-align: center;
+    }
+
+    }
+    .form{
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .web-bottom-text{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .info{
+        height: 40px;
+    }
+    .info::placeholder{
+        font-size: 20px;
+    }
+    #form_textarea{
+        height: 150px;
+    }
+@media (max-width: 1400px) {
+    .offers{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (max-width: 1300px) {
+    .plans-container{
+        display: block;
+        text-align: center;
+    }
+    .plan{
+        margin: 15px auto;
+    }
+}
+@media (max-width: 1130px) {
+    .offers{
+        text-align: center;
+    }
+    .name{
+        font-size: 34px;
+    }
+    .under-name{
+        font-size: 22px;
+    }
+
+}
+@media (max-width: 1020px) {
+    .text-n-line{
+        padding-bottom: 20px;
+    }
+    .projects-paragrafs{
+        display: block;
+    }
+}
+@media (max-width: 1005px) {
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+    .footer-texts{
+        margin: 0 auto;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    .footer-text1{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 950px) {
+    .offers{
+        grid-template-columns: 1fr;
+    }
+}

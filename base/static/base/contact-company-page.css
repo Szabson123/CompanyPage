@@ -1,0 +1,253 @@
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    70%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+body{
+    margin: 0;
+    background-color: #F8F8F8;
+}
+.center-container{
+    margin-top: 150px;
+}
+.logo{
+    width: 230px;
+    height: 102px;
+}
+.navbar{
+    background-color: black;
+    height: 102px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    margin-bottom: 150px;
+    width: 100%;
+    z-index: 1000;
+}
+.navButtons{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+.navBtn{
+    color: white;
+    font-family: Saira Condensed;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 186.09px;
+    height: 57px;
+    text-align: center;
+}
+.navBtnRed{
+    background-color: red;
+    padding: 22.5px 10px;
+    margin: 0;
+    border-radius: 25px;
+}
+.center-container{
+    background-color: rgba(248, 248, 248, 1);
+}
+.title{
+    font-family: Roboto Slab;
+    font-size: 60px;
+    font-weight: 400;
+    animation: slideInLeft 1s;
+}
+.under-title{
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: 300;
+    animation: slideInLeft 1s;
+    animation-delay: 100ms;
+}
+.web-top{
+    display: flex;
+    justify-content: center;
+}
+.web-top-text{
+    max-width: 869px;
+}
+.contact-list-line img{
+    vertical-align: middle;
+    padding-right: 80px;
+}
+.contact-list{
+    list-style: none;
+}
+.contact-list-line{
+    font-family: Varta;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.web-top img{
+    max-height: 425px;
+}
+.app-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+.form_form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -20px;
+    }
+    #form_textarea{
+      font-size: 20px;
+      font-family: "Inter", sans-serif;
+      box-sizing: border-box; /* Upewnia się, że padding nie zwiększy rozmiaru inputu */
+      padding-bottom: 120px;
+      overflow: hidden;
+      border-top:  solid 2px gray;
+      border-left: solid 2px gray;
+      border-bottom:  solid 2px gray;
+      border-right: solid 2px gray;
+    }
+    #form_textarea:focus{
+        border: solid 2px black;
+      }
+      .info:focus{
+        border-bottom: solid 2px black;
+        border-top: solid 2px black;
+        border-left: solid 2px black;
+        border-right: solid 2px black;
+      }
+    #form_textarea::placeholder{
+      text-align: left;
+      vertical-align: top;
+      font-family: "Inter", sans-serif;
+    }
+    .info::placeholder{
+      font-family: "Inter", sans-serif;
+    }
+    .info{
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      height: 48px;
+      margin-bottom: 20px;
+      padding: 8px; 
+      resize: none; 
+      box-sizing: border-box;
+      font-size: 12px;
+      font-weight: 400;
+      border-top:  solid 2px gray;
+     border-left: solid 2px gray;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+      min-width: 600px;
+    }
+.web-middle{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 20px;
+    margin-top: 50px;
+}
+.images{
+    width: 650px;
+}
+.form{
+    margin-top: 40px;
+}
+.footer-line{
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-top: 70px;
+}
+.footer-paragraf{
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;    
+}
+.footer-title{
+    font-family: Roboto Slab;
+    font-size: 28px;
+    font-weight: 600;
+}
+.footer-list{
+    list-style: none;
+    font-family: Saira Condensed;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.footer-text1{
+    max-width: 500px;
+}
+.footer-text1 img{
+    margin-left: 50px;
+}
+.footer-texts{
+    margin-left: 50px;
+    display: flex;
+    gap: 50px;
+}
+@media (max-width: 1370px) {
+    .web-top{
+        display: block;
+        text-align: center;
+    }
+    .web-top-text{
+        margin: 0 auto;
+    }
+    .contact-list-line{
+        text-align: center;
+    }
+}
+@media (max-width: 1300px) {
+    .web-middle{
+        display: block;
+    }
+    .images{
+        margin: 0 auto;
+    }
+    .info{
+        height: 60px;
+        font-size: 20px;
+    }
+    #form_textarea{
+        height: 140px;
+    }
+    .form_form{
+        margin: 50px 15%;
+    }
+    .contact-list{
+        margin: 50px 15%;
+        padding: 0;
+    }
+}
+@media (max-width: 1375px) {
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+    .footer-texts{
+        margin: 0 auto;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    .footer-text1{
+        margin: 0 auto;
+    }
+}

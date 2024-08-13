@@ -1,22 +1,19 @@
 {% load static %}
 
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'base/company-projects-page.css' %}">
-    <title>company page</title>
-  </head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
 <body>
-    <div class="navbar">
-        <img class="logo" src="company-projects-imgs/Bez tytułu.png"/>
-        <div class="navButtons">
-          <h5 class="navBtn">PROJEKTY</h5>
-          <h5 href="company-projects-page" class="navBtn">CENNIK</h5>
-          <h5 class="navBtn navBtnRed">KONTAKT</h5>
-        </div>
-      </div>
-    {% block content %}
-    {% endblock %}
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+    </footer>
 </body>
+</html>

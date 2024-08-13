@@ -1,9 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import QuestionView, Projects
+from .views import *
 
 urlpatterns = [
-    path('', QuestionView.as_view(), name='question_form'),
-    path('projekty', Projects.as_view(), name='projekty')
+    path('', MainPageView.as_view(), name='main'),
+    path('projekty', ProjectsView.as_view(), name='projekty'),
+    path('plany', PlanView.as_view(), name='plany'),
+    path('kontakt', ContactView.as_view(), name='kontakt')
 ]
