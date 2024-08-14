@@ -1,9 +1,9 @@
-{% extends "base/base.html" %}
+
 {% block content %}
-<html>
-  <head>
+{% load static %}
+<head>
     <title>Company Page</title>
-    <link rel="stylesheet" href="company-page2.css"/>
+    <link rel="stylesheet" href="{% static 'base/css/company-page2.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -37,14 +37,6 @@
   </head>
   <body>
     <section class="center-container">
-      <div class="navbar">
-        <img class="logo" src="company-page2-pictures/Bez tytułu.png"/>
-        <div class="navButtons">
-          <a class="navBtn">PROJEKTY</a>
-          <a href="company-projects-page" class="navBtn">CENNIK</a>
-          <a class="navBtn navBtnRed">KONTAKT</a>
-        </div>
-      </div>
       <div class="web-top">
         <div class="text-n-picture">
           <div class="main-text">
@@ -59,7 +51,7 @@
               ale także funkcjonalna i zoptymalizowana pod kątem SEO.
             </p>
             <div class="button1">
-              <a class="projects-button" href="">Projekty <img src="company-page2-pictures/Arrow 1.png"/></a>
+              <a class="projects-button" href="">Projekty <img src="{% static 'base/img/company-page2-pictures/Arrow 1.png' %}"></a>
             </div>
             <div class="text-n-lines">
               <div class="text-n-line">
@@ -76,7 +68,7 @@
               </div>
             </div>
           </div>
-          <img class="first-image" src="company-page2-pictures/email-4284157 2.png"/>
+          <img class="first-image" src=" {% static 'base/img/company-page2-pictures/email-4284157 2.png' %}"/>
         </div>
       </div>
       <div class="over-offers">
@@ -348,5 +340,4 @@
     </section>
     <script src="company-page2.js"></script>
   </body>
-</html>
 {% endblock %}
