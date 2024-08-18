@@ -1,4 +1,3 @@
-
 {% block content %}
 {% load static %}
 <head>
@@ -31,11 +30,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Varta:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Varta:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
     <section class="center-container">
       <div class="web-top">
         <div class="text-n-picture">
@@ -68,7 +64,7 @@
               </div>
             </div>
           </div>
-          <img class="first-image" src=" {% static 'base/img/company-page2-pictures/email-4284157 2.png' %}"/>
+          <img class="first-image" src="{% static 'base/img/company-page2-pictures/email-4284157 2.png' %}"/>
         </div>
       </div>
       <div class="over-offers">
@@ -82,42 +78,42 @@
             <p class="offer-content">
               Skupiamy się na tworzeniu intuicyjnych i przyjaznych dla użytkownika interfejsów, które zamieniają przeglądanie stron internetowych w inspirującą podróż.
             </p>
-            <img class="offer-image" id="offer-image1" src="company-page2-pictures/full-stack-developer-icon 1.png"/>
+            <img class="offer-image" id="offer-image1" src="{% static 'base/img/company-page2-pictures/full-stack-developer-icon 1.png' %}"/>
           </div>
           <div class="offer">
             <h3 class="offer-title" id="offer-title1">Re-design istniejących stron</h3>
             <p class="offer-content">
               Odnawiamy i modernizujemy przestarzałe strony internetowe, poprawiając ich wygląd, funkcjonalność i zgodność z najnowszymi standardami.
             </p>
-            <img class="offer-image" src="company-page2-pictures/project-work-icon 1.png"/>
+            <img class="offer-image" src="{% static 'base/img/company-page2-pictures/project-work-icon 1.png' %}"/>
           </div>
           <div class="offer"> 
             <h3 class="offer-title">Optymalizacja SEO</h3>
             <p class="offer-content">
               Wykorzystujemy skuteczne techniki SEO, aby poprawić ranking Twojej strony w wyszukiwarkach i przyciągnąć więcej odwiedzających.
             </p>
-            <img class="offer-image"  id="offer-image2" src="company-page2-pictures/chart-arrow-up-icon 1.png"/>
+            <img class="offer-image"  id="offer-image2" src="{% static 'base/img/company-page2-pictures/chart-arrow-up-icon 1.png' %}"/>
           </div>
           <div class="offer">
             <h3 class="offer-title">Aplikacje webowe</h3>
             <p class="offer-content">
               Projektujemy i wdrażamy zaawansowane aplikacje webowe, dostosowane do indywidualnych potrzeb Twojego biznesu.
             </p>
-            <img class="offer-image" id="offer-image3" src="company-page2-pictures/website-layout-icon 1.png"/>
+            <img class="offer-image" id="offer-image3" src="{% static 'base/img/company-page2-pictures/website-layout-icon 1.png' %}"/>
           </div>
           <div class="offer">
             <h3 class="offer-title" id="offer-title2">Optymalizacja szybkości ładowania </h3>
             <p class="offer-content" id="offer-content1">
               Zapewniamy błyskawiczne ładowanie stron, dzięki czemu użytkownicy mogą cieszyć się płynnym i niezakłóconym działaniem już od pierwszego kliknięcia.
             </p>
-            <img class="offer-image" src="company-page2-pictures/productivity-icon 1.png"/>
+            <img class="offer-image" src="{% static 'base/img/company-page2-pictures/productivity-icon 1.png' %}"/>
           </div>
           <div class="offer"> 
             <h3 class="offer-title">Certyfikaty SSL</h3>
             <p class="offer-content">
               Instalujemy certyfikaty SSL, aby zapewnić bezpieczne połączenie i zwiększyć zaufanie użytkowników do Twojej strony.
             </p>
-            <img class="offer-image"  id="offer-image4" src="company-page2-pictures/cyber-security-icon 1.png"/>
+            <img class="offer-image"  id="offer-image4" src="{% static 'base/img/company-page2-pictures/cyber-security-icon 1.png' %}"/>
           </div>
         </div>
       </div>
@@ -140,13 +136,13 @@
       <div class="websites-columns">
         <div cass="webisites-column">
           <div class="image-n-title">
-            <img class="projects-image fadeIn" src="company-page2-pictures/Zrzut ekranu 2024-08-10 115841 (1).png"/>
+            <img class="projects-image fadeIn" src="{% static 'base/img/company-page2-pictures/Zrzut ekranu 2024-08-10 115841 (1).png' %}"/>
             <h3 class="projects-under-title">
               Strona X
             </h3>
           </div>
           <div class="image-n-title">
-            <img class="projects-image fadeIn" src="company-page2-pictures/Zrzut ekranu 2024-08-10 120008.png"/>
+            <img class="projects-image fadeIn" src="{% static 'base/img/company-page2-pictures/Zrzut ekranu 2024-08-10 120008.png' %}"/>
             <h3 class="projects-under-title">
               Strona X
             </h3>
@@ -154,16 +150,16 @@
         </div>
         <div class="webisites-column">
           <div class="button2-box">
-            <a class="button2" href="">Zobacz wszystkie projekty <img src="company-page2-pictures/Arrow 1.png"></a>
+            <a class="button2" href="">Zobacz wszystkie projekty <img src="{% static 'base/img/company-page2-pictures/Arrow 1.png' %}"></a>
           </div>
           <div class="image-n-title1" class="image-n-title2">
-            <img class="projects-image fadeIn" src="company-page2-pictures/Zrzut ekranu 2024-08-10 120158.png"/>
+            <img class="projects-image fadeIn" src="{% static 'base/img/company-page2-pictures/Zrzut ekranu 2024-08-10 120158.png' %}"/>
             <h3 class="projects-under-title">
               Strona X
             </h3>
           </div>
           <div class="image-n-title1" class="image-n-title2">
-            <img class="projects-image fadeIn" src="company-page2-pictures/project4.png"/>
+            <img class="projects-image fadeIn" src="{% static 'base/img/company-page2-pictures/project4.png' %}"/>
             <h3 class="projects-under-title">
               Strona X
             </h3>
@@ -176,7 +172,7 @@
         </div>
         <div class="meet-us-content">
           <div class="meet-us-line">
-            <img class="meet-us-img" src="company-page2-pictures/Szymon.jpeg"/>
+            <img class="meet-us-img" src="{% static 'base/img/company-page2-pictures/Szymon.jpeg' %}"/>
             <div class="meet-us-text">
               <h2 class="name">Szymon</h2>
               <p class="under-name">
@@ -185,7 +181,7 @@
             </div>
           </div>
           <div class="meet-us-line">
-            <img class="meet-us-img" src="company-page2-pictures/Pawel.jpeg"/>
+            <img class="meet-us-img" src="{% static 'base/img/company-page2-pictures/Pawel.jpeg' %}"/>
             <div class="meet-us-text">
               <h2 class="name">Paweł</h2>
               <p class="under-name">
@@ -195,7 +191,7 @@
             </div>
           </div>
           <div class="meet-us-line">
-            <img class="meet-us-img" src="company-page2-pictures/Natalia.jpeg"/>
+            <img class="meet-us-img" src="{% static 'base/img/company-page2-pictures/Natalia.jpeg' %}"/>
             <div class="meet-us-text">
               <h2 class="name">Natalia</h2>
               <p class="under-name">
@@ -207,7 +203,7 @@
       </div>
       <div class="plans-container">
         <div class="plan plan1 hidden2">
-          <img src="company-page2-pictures/Rectangle 36.png"/>
+          <img src="{% static 'base/img/company-page2-pictures/Rectangle 36.png' %}"/>
           <h2 class="plan-number">PLAN A</h2>
           <h3 class="plan-worth1">1000PLN</h3>
           <h3 class="plan-worth2">600PLN</h3>
@@ -230,7 +226,7 @@
           </div>
         </div>
         <div class="plan">
-          <img src="company-page2-pictures/Rectangle 36.png"/>
+          <img src="{% static 'base/img/company-page2-pictures/Rectangle 36.png' %}"/>
           <h2 class="plan-number">PLAN B</h2>
           <h3 class="plan-worth1">200PLN</h3>
           <h3 class="plan-worth2">1500PLN</h3>
@@ -253,7 +249,7 @@
           </div>
         </div>
         <div class="plan plan3 hidden2">
-          <img src="company-page2-pictures/Rectangle 36.png"/>
+          <img src="{% static 'base/img/company-page2-pictures/Rectangle 36.png' %}"/>
           <h2 class="plan-number">PLAN C</h2>
           <h3 class="plan-worth1">1600PLN</h3>
           <h3 class="plan-worth2">1200PLN</h3>
@@ -292,52 +288,15 @@
           </h2>
           <ul class="contact-list">
             <li class="contact-list-line">
-              <img src="company-page2-pictures/phone-call-icon 1.png"/> +48 509 325 235
+              <img src="{% static 'base/img/company-page2-pictures/phone-call-icon 1.png' %}"/> +48 509 325 235
             </li>
             <li class="contact-list-line">
-              <img src="company-page2-pictures/attherate-icon 1.png"/> xyz@gmail.com
+              <img src="{% static 'base/img/company-page2-pictures/attherate-icon 1.png' %}"/> xyz@gmail.com
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer">
-        <hr class="footer-line">
-        <div class="footer-content">
-          <div class="footer-text1" class="footer-text">
-            <img src="company-page2-pictures/Rectangle 42.png"/>
-            <p class="footer-paragraf">
-              Kreatywne Projektowanie i Precyzyjne Programowanie Stron Internetowych – Tworzymy Strony, Które Wyróżniają się w Sieci, Zwiększają Widoczność i Realizują Twoje Cele Biznesowe
-            </p>
-          </div>
-          <div class="footer-texts">
-            <div class="footer-text">
-              <h3 class="footer-title">NASZE USŁUGI</h3>
-              <ul class="footer-list">
-                <li class="footer-list-line">Strona Główna</li>
-                <li class="footer-list-line">Projekty</li>
-                <li class="footer-list-line">Cennik</li>
-                <li class="footer-list-line">Kontakt</li>
-              </ul>
-            </div>
-            <div class="footer-text">
-              <h3 class="footer-title">NW JAK OPISAĆ</h3>
-              <ul class="footer-list">
-                <li class="footer-list-line">FAQ</li>
-                <li class="footer-list-line">Polityka Prywatności</li>
-              </ul>
-            </div>
-            <div class="footer-text">
-              <h3 class="footer-title">DANE KONTAKTOWE</h3>
-              <ul class="footer-list">
-                <li class="footer-list-line">+48 509 325 235</li>
-                <li class="footer-list-line">xyz@gmail.com</li>
-                <li class="footer-list-line">ADRES asfsd3235sd</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <script src="company-page2.js"></script>
+    <script src="{% static 'base/js/company-page2.js' %}"></script>
   </body>
 {% endblock %}
