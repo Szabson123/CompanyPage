@@ -49,41 +49,7 @@ body{
 .center-container{
     margin-top: 150px;
 }
-.logo{
-    width: 230px;
-    height: 102px;
-}
-.navbar{
-    background-color: black;
-    height: 102px;
-    display: flex;
-    position: fixed;
-    top: 0;
-    margin-bottom: 150px;
-    width: 100%;
-    z-index: 1000;
-}
-.navButtons{
-    display: flex;
-    margin-left: auto;
-    gap: 20px;
-}
-.navBtn{
-    color: white;
-    font-family: Saira Condensed;
-    font-size: 36px;
-    font-weight: 300;
-    margin-top: 20px;
-    width: 186.09px;
-    height: 57px;
-    text-align: center;
-}
-.navBtnRed{
-    background-color: red;
-    padding: 22.5px 10px;
-    margin: 0;
-    border-radius: 25px;
-}
+
 .title{
     font-family: Roboto Slab;
     font-size: 60px;
@@ -187,46 +153,6 @@ body{
     scale: 0.7;
     opacity: 0.8;
   }
-.footer-line{
-    border: 1px solid rgba(0, 0, 0, 1);
-    margin-top: 70px;
-}
-.footer-paragraf{
-    font-family: Josefin Sans;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: left;    
-}
-.footer-title{
-    font-family: Roboto Slab;
-    font-size: 28px;
-    font-weight: 600;
-}
-.footer-list{
-    list-style: none;
-    font-family: Saira Condensed;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 0;
-}
-.footer-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 70px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.footer-text1{
-    max-width: 500px;
-}
-.footer-text1 img{
-    margin-left: 50px;
-}
-.footer-texts{
-    margin-left: 50px;
-    display: flex;
-    gap: 50px;
-}
 @media (max-width: 1210px) {
     .projects img{
         width: 600px;
@@ -251,19 +177,5 @@ body{
     }
     .text-overlay-line{
         width: 400px;
-    }
-}
-@media (max-width: 1375px) {
-    .footer-content{
-        grid-template-columns: 1fr;
-    }
-    .footer-texts{
-        margin: 0 auto;
-    }
-    .footer-text{
-        text-align: center;
-    }
-    .footer-text1{
-        margin: 0 auto;
     }
 }

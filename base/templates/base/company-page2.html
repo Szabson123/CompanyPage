@@ -1,4 +1,4 @@
-{% block content %}
+
 {% load static %}
 <head>
     <title>Company Page</title>
@@ -30,9 +30,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Varta:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <section class="center-container">
+      <div class="navbar">
+        <img class="logo" src="company-page2-pictures/Bez tytułu.png"/>
+        <div class="navButtons">
+        <a class="navBtn">PROJEKTY</a>
+        <a href="company-projects-page" class="navBtn">CENNIK</a>
+        <a class="navBtn navBtnRed">KONTAKT</a>
+    </div>
       <div class="web-top">
         <div class="text-n-picture">
           <div class="main-text">
@@ -299,4 +307,4 @@
     </section>
     <script src="{% static 'base/js/company-page2.js' %}"></script>
   </body>
-{% endblock %}
+
