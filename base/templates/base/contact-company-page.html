@@ -1,17 +1,13 @@
-{% block content %}
+{% extends "base/base.html" %}
 {% load static %}
 <html>
   <head>
     <title>contact</title>
+    {% block extra_css %}
     <link rel="stylesheet" href="{% static 'base/css/contact-company-page.css' %}"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Varta:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Varta:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+		{% endblock %}
   </head>
-  <body>
+  {% block content %}
     <section class="center-container">
       <div class="web-top">
         <div class="web-top-text">
@@ -25,10 +21,10 @@
           <div class="contact-list-box">
             <ul class="contact-list">
               <li class="contact-list-line">
-                <img src="{% static 'base/img/contact-company-page-imgs/phone-call-icon 1.png' %}"/> +48 509 325 235
+                <img src="{% static 'base/img/company-page2-pictures/phone-call-icon 1.png' %}"/> +48 509 325 235
               </li>
               <li class="contact-list-line">
-                <img src="{% static 'base/img/contact-company-page-imgs/attherate-icon 1.png' %}"/> xyz@gmail.com
+                <img src="{% static 'base/img/company-page2-pictures/attherate-icon 1.png' %}"/> xyz@gmail.com
               </li>
             </ul>
           </div>

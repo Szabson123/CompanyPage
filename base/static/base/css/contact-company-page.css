@@ -16,41 +16,7 @@ body{
 .center-container{
     margin-top: 150px;
 }
-.logo{
-    width: 230px;
-    height: 102px;
-}
-.navbar{
-    background-color: black;
-    height: 102px;
-    display: flex;
-    position: fixed;
-    top: 0;
-    margin-bottom: 150px;
-    width: 100%;
-    z-index: 1000;
-}
-.navButtons{
-    display: flex;
-    margin-left: auto;
-    gap: 20px;
-}
-.navBtn{
-    color: white;
-    font-family: Saira Condensed;
-    font-size: 36px;
-    font-weight: 300;
-    margin-top: 20px;
-    width: 186.09px;
-    height: 57px;
-    text-align: center;
-}
-.navBtnRed{
-    background-color: red;
-    padding: 22.5px 10px;
-    margin: 0;
-    border-radius: 25px;
-}
+
 .center-container{
     background-color: rgba(248, 248, 248, 1);
 }
@@ -76,14 +42,13 @@ body{
 }
 .contact-list-line img{
     vertical-align: middle;
-    padding-right: 80px;
 }
 .contact-list{
     list-style: none;
 }
 .contact-list-line{
     font-family: Varta;
-    font-size: 38px;
+    font-size: 33px;
     font-weight: 400;
     margin-bottom: 50px;
 }
