@@ -46,7 +46,7 @@
 <body>
     <div class="navbar">
         <ul class="list-navbar">
-            <li><img class="logo" src="company-page2-pictures/Bez tytułu.png"/></li>
+            <li><a href="{% url 'main' %}"><img class="logo" src="{% static 'base/img/base/Logo.png' %}"/></a></li>
             <div class="navButtons">
                 <li><a href="{% url 'projekty' %}" class="navBtn">PROJEKTY</a></li>
                 <li><a href="{% url 'plany' %}" class="navBtn">PLAN</a></li>

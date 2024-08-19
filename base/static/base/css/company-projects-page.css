@@ -153,6 +153,10 @@ body{
     scale: 0.7;
     opacity: 0.8;
   }
+.projects-section{
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFE0BD 50%, #FFFFFF 100%);
+
+  }
 @media (max-width: 1210px) {
     .projects img{
         width: 600px;
