@@ -154,7 +154,7 @@ body{
     opacity: 0.8;
   }
 .projects-section{
-    background: linear-gradient(to bottom, #FFFFFF 0%, #FFE0BD 50%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #F8F8F8 0%, #FFE0BD 30%, #FFE0BD 50%, #FFE0BD 80%, #F8F8F8 100%);
 
   }
 @media (max-width: 1210px) {
