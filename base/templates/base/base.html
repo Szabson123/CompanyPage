@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'base/css/gooter' %}">
+    <link rel="stylesheet" href="{% static 'base/css/footer-navbar.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -40,7 +40,16 @@
     {% endblock %}
 </head>
 <body>
-
+    <div class="navbar">
+        <ul class="list-navbar">
+            <li><img class="logo" src="company-page2-pictures/Bez tytułu.png"/></li>
+            <div class="navButtons">
+                <li><a href="{% url 'projekty' %}" class="navBtn">PROJEKTY</a></li>
+                <li><a href="{% url 'plany' %}" class="navBtn">PLAN</a></li>
+                <li><a href="{% url 'kontakt' %}" class="navBtn navBtnRed">KONTAKT</a></li>
+            </div>
+        </ul>
+    </div>
     <div class="content">
         {% block content %}
         {% endblock %}
@@ -48,39 +57,34 @@
     <div class="footer">
         <hr class="footer-line">
         <div class="footer-content">
-            <div class="footer-text1" class="footer-text">
+            <div class="footer-text1">
                 <img src="company-page2-pictures/Rectangle 42.png"/>
-                <p class="footer-paragraf">
+                <p class="footer-paragraph">
                     Kreatywne Projektowanie i Precyzyjne Programowanie Stron Internetowych – Tworzymy Strony, Które Wyróżniają się w Sieci, Zwiększają Widoczność i Realizują Twoje Cele Biznesowe
                 </p>
             </div>
             <div class="footer-texts">
                 <div class="footer-text">
                     <h3 class="footer-title">NASZE USŁUGI</h3>
-                    <ul class="footer-list">
-                    <li class="footer-list-line">Strona Główna</li>
-                    <li class="footer-list-line">Projekty</li>
-                    <li class="footer-list-line">Cennik</li>
-                    <li class="footer-list-line">Kontakt</li>
-                    </ul>
+                    <p class="footer-paragraph">Strona Główna</p>
+                    <p class="footer-paragraph">Projekty</p>
+                    <p class="footer-paragraph">Cennik</p>
+                    <p class="footer-paragraph">Kontakt</p>
                 </div>
                 <div class="footer-text">
                     <h3 class="footer-title">NW JAK OPISAĆ</h3>
-                    <ul class="footer-list">
-                    <li class="footer-list-line">FAQ</li>
-                    <li class="footer-list-line">Polityka Prywatności</li>
-                    </ul>
+                    <p class="footer-paragraph">FAQ</p>
+                    <p class="footer-paragraph">Polityka Prywatności</p>
                 </div>
                 <div class="footer-text">
                     <h3 class="footer-title">DANE KONTAKTOWE</h3>
-                    <ul class="footer-list">
-                    <li class="footer-list-line">+48 509 325 235</li>
-                    <li class="footer-list-line">xyz@gmail.com</li>
-                    <li class="footer-list-line">ADRES asfsd3235sd</li>
-                    </ul>
+                    <p class="footer-paragraph">+48 509 325 235</p>
+                    <p class="footer-paragraph">xyz@gmail.com</p>
+                    <p class="footer-paragraph">ADRES asfsd3235sd</p>
                 </div>
             </div>
         </div>
     </div>
+    
 </body>
 </html>
