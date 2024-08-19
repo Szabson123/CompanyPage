@@ -250,13 +250,16 @@
     
       <div class="web-bottom">
         <div class="form">
-          <form class="form_form" infoaction="">
-                <input class="info" type="text" placeholder="Imię">
-                <input class="info" type="text" placeholder="Nazwisko">
-                <input class="info" type="text" placeholder="Nazwa Firmy">
-                <input class="info" type="email"placeholder="E-mail">
-                <textarea class="info" id="form_textarea" placeholder="Wiadomość"></textarea>
-            </form>
+          <form class="form_form" method="post" action="">
+            {% csrf_token %}
+            {{ form.name }}
+            {{ form.last_name }}
+            {{ form.company_name }}
+            {{ form.email }}
+            {{ form.phone_number }}
+            {{ form.text }}
+            <button type="submit">Wyślij</button>
+        </form>
         </div>
         <div class="web-bottom-text">
           <h2 class="web-bottom-text-content">

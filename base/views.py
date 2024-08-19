@@ -10,7 +10,7 @@ from .forms import QuestionForm
 class MainPageView(FormMixin, TemplateView):
     template_name = 'base/company-page2.html'
     form_class = QuestionForm
-    success_url = reverse_lazy('/')  
+    success_url = reverse_lazy('main')  
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
