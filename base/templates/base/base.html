@@ -47,6 +47,7 @@
     <div class="navbar">
         <ul class="list-navbar">
             <li><a href="{% url 'main' %}"><img class="logo" src="{% static 'base/img/base/Logo.png' %}"/></a></li>
+            <div class="hamburger">&#9776;</div>
             <div class="navButtons">
                 <li><a href="{% url 'projekty' %}" class="navBtn">PROJEKTY</a></li>
                 <li><a href="{% url 'plany' %}" class="navBtn">PLAN</a></li>
@@ -62,7 +63,7 @@
         <hr class="footer-line">
         <div class="footer-content">
             <div class="footer-text1">
-                <img src="company-page2-pictures/Rectangle 42.png"/>
+                <a href="{% url 'main' %}"><img class="logo-down" src="{% static 'base/img/base/Logo.png' %}"/></a>
                 <p class="footer-paragraph">
                     Kreatywne Projektowanie i Precyzyjne Programowanie Stron Internetowych – Tworzymy Strony, Które Wyróżniają się w Sieci, Zwiększają Widoczność i Realizują Twoje Cele Biznesowe
                 </p>
@@ -89,6 +90,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="{% static 'base/js/company-page2.js' %}"></script>
 </body>
 </html>

@@ -16,3 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = document.querySelectorAll('.hidden2');
     hiddenElements.forEach((el) => observer.observe(el));
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navButtons = document.querySelector('.navButtons');
+
+    hamburger.addEventListener('click', function() {
+        navButtons.classList.toggle('active');
+    });
+});

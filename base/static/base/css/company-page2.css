@@ -87,6 +87,7 @@ body{
     text-align: center;
     font-weight: 400;
     animation: slideInLeft 1s;
+    margin-top: 160px;
 }
 .under-title{
     font-family: Josefin Sans;

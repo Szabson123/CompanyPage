@@ -7,16 +7,23 @@
     margin-bottom: 10px;
     width: 300px
 }
+.logo-down{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 160px
+}
 .navbar {
     background-color: black; 
     padding-right: 25px;
     position: fixed; 
     top: 0; 
-    width: 99%; 
+    width: 100%; /* Zmieniamy na 100% dla pełnej szerokości */
     z-index: 1000; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
 }
 
+/* Styl ul */
 ul {
     list-style-type: none; 
     margin: 0;
@@ -25,28 +32,33 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
-.navButtons{
+
+/* Styl dla przycisków nawigacyjnych */
+.navButtons {
     display: flex;
     margin-left: auto;
-    gap: 90px;
+    gap: 30px;
 }
-.navBtn{
+
+/* Styl dla pojedynczych przycisków */
+.navBtn {
     color: white;
     font-family: Saira Condensed;
     font-size: 36px;
     font-weight: 300;
     margin-top: 20px;
-    width: 186.09px;
-    height: 57px;
     text-align: center;
     text-decoration: none;
 }
-.navBtnRed{
+
+/* Styl dla przycisku kontaktowego */
+.navBtnRed {
     background-color: red;
     padding: 22.5px 10px;
-    margin: 0;
+    margin: 40px;
     border-radius: 25px;
 }
+
 .navBtnRed:hover {
     background-color: darkred; 
 }
@@ -86,14 +98,18 @@ ul {
 .footer-text1{
     max-width: 500px;
 }
-.footer-text1 img{
-    margin-left: 50px;
-}
+
 .footer-texts{
     margin-left: 50px;
     display: flex;
     gap: 50px;
 }
+
+.hamburger {
+    margin-right: 30px;
+    display: none;
+}
+
 @media (max-width: 1005px) {
     .footer-content{
         grid-template-columns: 1fr;
@@ -106,5 +122,50 @@ ul {
     }
     .footer-text1{
         margin: 0 auto;
+    }
+    .navButtons {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        background-color: black;
+        width: 250px; /* Ustawienie szerokości menu */
+        border: 1px solid #ccc;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Cień, aby menu było bardziej widoczne */
+        border-radius: 10px; /* Zaokrąglenie rogów menu */
+    }
+
+    .navBtn {
+        color: white;
+        font-family: Saira Condensed;
+        font-size: 24px; /* Zmniejszenie rozmiaru czcionki */
+        font-weight: 300;
+        width: 100%;
+        height: 50px; /* Ustawienie wysokości przycisków */
+        text-align: center;
+        text-decoration: none;
+        display: flex; /* Dodanie flexbox do wyśrodkowania */
+        justify-content: center; /* Wycentrowanie tekstu w poziomie */
+        align-items: center; /* Wycentrowanie tekstu w pionie */
+        margin: 10px 0; /* Odstęp pomiędzy przyciskami */
+    }
+
+    .navBtnRed {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: block; /* Pokaż ikonę hamburgera */
+        cursor: pointer;
+        font-size: 36px;
+        color: white;
+        margin-left: auto;
+    }
+
+    .navButtons.active {
+        display: flex; /* Pokaż menu po kliknięciu hamburgera */
     }
 }
